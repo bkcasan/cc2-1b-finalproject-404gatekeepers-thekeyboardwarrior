@@ -5,7 +5,7 @@ import random
 def start_game():
     print("""""With your passion for the legend of the keyboard, you venture to the desert to acquire the lost remaining symbol relics that will complete the keyboard. The symbols !,$,&,* and ~.
 
-Your companion helped you to get to the location because only you 1 were the last person in your bloodline who has the capabilities to take hold of them and place them to the right location.
+Your companion, Jebrael, helped you to get to the location because only you 1 were the last person in your bloodline who has the capabilities to take hold of them and place them to the right location.
 
 On the last leg, you finally acquire the “~” symbol. However the whole place started shaking.
 """"")
