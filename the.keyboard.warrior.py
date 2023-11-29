@@ -143,6 +143,8 @@ def simulate_maze_escape():
 
     rand = random.choice(Mazetotal)
     print(rand)
+#print task/quest here
+    
     print("Congratulations! You have escaped the maze.")
     sys.exit()
     
