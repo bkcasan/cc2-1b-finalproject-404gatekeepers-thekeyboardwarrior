@@ -6,7 +6,7 @@ def print_maze(player_pos, maze):
             if (row, col) == player_pos:
                 print("@", end=" ")
             elif maze[row][col] == 1:
-                print("#", end=" ")
+                print("█", end=" ")
             elif (row, col) == (len(maze) - 1, len(maze[0]) - 1):  # Check if it's the exit
                 print("✩", end=" ")
             else:
@@ -113,9 +113,15 @@ On the last leg, you finally acquire the “~” symbol. However the whole place
         print_maze(player_pos, maze)
         move_key = input("Enter a move key (W/A/S/D) or 'exit' to quit: ").lower()
 
-        if move_key == "exit":
-            print("\nThanks for playing! Exiting the game.")
+        if move_key in ['w', 'a', 's', 'd']:
+            # Handle the valid move
+            # Update player position or perform other actions
+            print(f"Moving {move_key}")
+        elif move_key == 'exit':
+            print("Exiting the game. Goodbye!")
             break
+        else:
+            print("Invalid choice. Please enter W/A/S/D or 'exit'.")
 
         new_pos = move_player(player_pos, move_key, maze_size)
         if maze[new_pos[0]][new_pos[1]] == 0:
