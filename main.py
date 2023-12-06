@@ -79,19 +79,15 @@ def main():
     choice = input("Enter your choice (1/2/3): ")
 
     if choice == "1":
-        print("Starting the game...")
-        print(f"\nHello, Let's start the game.")
-    print(f"""With your passion for the legend of the keyboard, you venture to the desert to acquire the lost remaining symbol relics that will complete the keyboard. The symbols !,$,&,* and ~.
-
-Your companion, Jebrael, helped you to get to the location because only you, were the last person in your bloodline who has the capabilities to take hold of them and place them to the right location.
-
-On the last leg, you finally acquire the “~” symbol. However the whole place started shaking.""")
+        print("Starting the game...")  
     elif choice == "2":
         Dialogues.credits()
         return
+    
     elif choice == "3":
         print("Exiting the game...")
         return
+    
     else:
         print("Invalid choice. Exiting the game...")
         return
